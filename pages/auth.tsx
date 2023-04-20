@@ -68,13 +68,14 @@ const Auth = () => {
   }, [email, name, password, login]);
 
   return (
-    <div className="relative h-full w-full bg-[url('/images/hero.jpg')] bg-no-repeat bg-center bg-fixed bg-cover">
-      <div className="bg-black w-full h-full lg:bg-opacity-50">
+    <div className="relative h-full w-full bg-[url('/logo/moblogo.png')] 
+    sm:bg-[url('/logo/backlogo.jpg')] bg-no-repeat bg-center bg-fixed bg-cover">
+      <div className="bg-black/50 w-full h-full md:bg-opacity-50 lg:bg-opacity-50">
         <nav className="px-12 py-5">
           <img src="/images/logo.png" className="h-12" alt="Logo" />
         </nav>
         <div className="flex justify-center">
-          <div className="bg-black bg-opacity-70 px-16 py-16 self-center mt-2 lg:w-2/5 lg:max-w-md rounded-md w-full">
+          <div className="bg-black bg-opacity-70 px-9 py-16 lg:px-16 self-center mt-2 lg:w-2/5  md:w-3/5 lg:max-w-md rounded-md  w-4/5">
             <h2 className="text-white text-4xl mb-8 font-semibold">
               {variant === 'login' ? 'Sign in' : 'Register'}
             </h2>
