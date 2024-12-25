@@ -75,7 +75,7 @@ const Auth = () => {
           <img src="/images/logo.png" className="h-12" alt="Logo" />
         </nav>
         <div className="flex justify-center">
-          <div className="bg-black bg-opacity-70 px-9 py-16 lg:px-16 self-center mt-2 lg:w-2/5  md:w-3/5 lg:max-w-md rounded-md  w-4/5">
+          <div className="bg-black bg-opacity-90 px-6 py-6 lg:px-12 self-center mt-1 lg:w-2/5  md:w-3/5 lg:max-w-md rounded-md  w-4/5">
             <h2 className="text-white text-4xl mb-8 font-semibold">
               {variant === 'login' ? 'Sign in' : 'Register'}
             </h2>
@@ -115,7 +115,7 @@ const Auth = () => {
                 <FaGithub size={32} />
               </div>
             </div>
-            <p className="text-neutral-500 mt-12">
+            <p className="text-neutral-500 mt-3">
               {variant === 'login' ? 'First time using Maxxlix?' : 'Already have an account?'}
               <span onClick={toggleVariant} className="text-white ml-1 hover:underline cursor-pointer">
                 {variant === 'login' ? 'Create an account' : 'Login'}
